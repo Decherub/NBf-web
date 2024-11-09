@@ -1,0 +1,119 @@
+.book-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(150px, 5fr)); /* Responsive grid */
+    gap: 20px; /* Space between the cards */
+    padding-top: 20px;
+    padding-left: 420px;
+    justify-content: center;
+    align-content: center;
+    text-decoration: none;
+
+  }
+
+  .book-card {
+    background-color: #4a0bdc;
+    border-radius: 250px;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(206, 212, 207, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    padding: 4px;
+    text-align: center;
+    text-decoration:none
+    justify-content:center
+    
+  }
+
+body {
+    font-family: Arial, sans-serif;
+}
+
+/* Style for the navbar */
+.navbar {
+    width: 100%; /* Full width */
+    height: 250px;  /* Adjust based on your design */
+    background-image: url('../assets/frontendmentor/bg-header-mobile.png'); /* Replace with your image path */
+    background-size: cover;  /* Ensures the image covers the entire area */
+    background-position: center;  /* Center the image */
+    background-repeat: no-repeat; /* Prevent the image from repeating */
+    display: flex;
+    justify-content: center;  /* Center the links */
+    align-items:center;  /* Center links vertically */
+}
+
+.nav-links {
+    list-style-type: none;
+    display: flex;
+}
+
+.nav-links li {
+    margin: 0 15px;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: white;  /* Adjust based on the image's contrast */
+    font-size: 18px;
+    font-weight: bold;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f4f4f4;
+    padding: 20px;
+    justify-content: center;  /* Horizontally center the book card *//* Vertically center the book card */
+}
+/* Style for the book container */
+.book-container {
+    display: flex;               /* Enables flexbox layout */
+    justify-content: space-around; /* Distributes cards evenly */
+    align-items: flex-start;      /* Align items to the top */
+    gap: 20px;                   /* Adds space between the cards */
+    padding: 20px;
+    background-color:#e20000
+  }
+  /* Hover effect for book cards */
+.book-card:hover {
+    background-color: #ba0edc; /* Light background on hover */
+    transform: translatey(-10px); /* Slightly lift the card */
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2); /* Add a deeper shadow */
+    
+  }
+  
+  .horizontal-container {
+    display: flex;  /* Enables horizontal alignment */
+    justify-content: flex-start; /* Align items to the start (default) */
+    align-items: center; /* Vertically align both the image and text */
+    gap: 20px; /* Add some space between the image and text */
+}
+
+.horizontal-container img {
+    width: 600px; /* Set the desired image width */
+    height: auto; /* Maintain aspect ratio */
+    padding-top: 75px;
+}
+
+.horizontal-container .text {
+    max-width: 450px; /* Set a max width for the text */
+    padding-bottom: 0px;
+    padding-left: 45px;
+}
+.ul {
+    text-decoration: none;
+    list-style-type: none;
+}
+.footer {
+    background-image: url();
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    display: flex;
+}
+
+
+

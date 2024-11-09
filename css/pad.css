@@ -1,0 +1,221 @@
+    body {
+    font-family: Arial, sans-serif;
+  }
+  
+  nav {
+    background-color: #333;
+    padding: 100px 20px;
+    margin: 50;
+    height: 100px;
+  }
+  
+  .navbar {
+    list-style-type: none;
+    display: flex;
+    justify-content: space-around; /* Evenly distribute the links */
+    align-items: center;
+  }
+  .navbar {
+    display: flex;
+    justify-content: space-between; /* Adjust space around items */
+    padding: 0 20px;
+    background-color: #333;
+  }
+  
+  .navbar-list {
+    list-style-type: none;
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .navbar-item {
+    padding: 10px;
+    color: white;
+  }
+  
+  .navbar-center {
+    margin-left: auto;
+    margin-right: auto;
+  }
+  
+  
+  .navbar a {
+    color: rgb(113, 74, 74);
+    text-decoration: none;
+    padding: 50px 20px;
+    font-size: 20px;
+    transition: background-color 0.3s ease, color 0.3s ease;
+  }
+  
+  .navbar a:hover {
+    background-color: #556834;
+    border-radius: 5px;
+  }
+  
+  /* Highlight the Donate button */
+  .navbar .donate {
+    background-color: #ff5733;
+    border-radius: 5px;
+  }
+  
+  .navbar .donate:hover {
+    background-color: #ff704d;
+  }
+  
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #444;
+    min-width: 160px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+  }
+  
+  .dropdown-content li {
+    list-style: none;
+    padding: 10px;
+  }
+  
+  .dropdown-content li a {
+    color: white;
+    text-decoration: none;
+    display: block;
+  }
+  
+  .dropdown-content li:hover {
+    background-color: #555;
+  }
+  
+
+.book-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr)); /* Responsive grid */
+    gap: 20px; /* Space between the cards */
+  }
+  
+  .book-card {
+    background-color: #5e1010;
+    border-radius: 360px;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    padding: 15px;
+    text-align: center;
+    justify-content: space-around;
+  }
+  
+  /* Hover effect */
+  .book-card:hover {
+    transform: translatey(+10px); /* Pop effect */
+    box-shadow: 0 12px 24px rgba(0, 0, 0, 0.2); /* Shadow gets stronger */
+  }
+  
+  /* Shadow on hover */
+  .book-card:hover::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.05); /* Subtle overlay effect */
+    z-index: -1;
+  }
+
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh; /* Ensure the body covers the full viewport height */
+  }
+  
+  nav {
+    background-color: #333;
+    padding: 10px 20px;
+  }
+  
+  .navbar {
+    list-style-type: none;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+  }
+  .navbar a {
+    color: white;
+    text-decoration: none;
+    padding: 10px 20px;
+    font-size: 25px;
+    transition: background-color 0.3s ease, color 0.3s ease;
+  }
+  
+  .navbar a:hover {
+    background-color: #555;
+    border-radius: 5px;
+  }
+  
+  .navbar .donate {
+    background-color: #ff5733;
+    border-radius: 5px;
+  }
+  
+  .navbar .donate:hover {
+    background-color: #ff704d;
+  }
+  
+  .content {
+    flex: 1; /* This makes the content area expand to fill available space */
+    padding: 5px;
+    text-align: center;
+  }
+  .p{
+    text-align:center
+  }
+  
+  footer {
+    background-color: #333;
+    color: white;
+    padding: 10px 0;
+    text-align: center;
+  }
+  
+  .footer-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+  
+  .footer-content p {
+    margin: 0;
+  }
+  
+  .footer-links {
+    list-style-type: none;
+    display: flex;
+    gap: 15px;
+  }
+  
+  .footer-links li {
+    display: inline;
+  }
+  
+  .footer-links a {
+    color: white;
+    text-decoration: none;
+    transition: color 0.3s ease;
+  }
+  
+  .footer-links a:hover {
+    color: #ff5733;
+  }
