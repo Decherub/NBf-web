@@ -1,113 +1,495 @@
-<!DOCTYPE HTML>
-<!--
-	Editorial by HTML5 UP
-	html5up.net | @ajlkn
-	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
--->
-<html>
-	<head>
+<!DOCTYPE html>
+<html lang="en">
+<head>
 	
-			<meta charset="UTF-8">
-			<meta name="viewport" content="width=device-width, initial-scale=1.0">
-			<title>Navbar Example</title>
-			<style>
-			  /* Basic styling for the navbar */
-			  body {
-				font-family: Arial, sans-serif;
-				margin: 0;
-			  }
-			  
-			  .navbar {
-				display: flex;
-				justify-content:center
-				text-align; left: cover;
-                background-position: center;
-                
-			  }
-			  .navbar a {
-				color: rgb(239, 20, 20);
-				text-decoration-line: none;
-				padding: 4px 8px;
-				transition:all
-				transform; scale3d(8);
-			  }
-			  .navbar a:hover {
-               background-color: #555;
-               transform: translateY(-7px); /* Moves link slightly upward on hover */
-               box-shadow: 4px 4px 8px rgb(237, 4, 4); /* Enhances shadow on hover */
-              }
-			  .nav-links {
-				display: flex;
-				gap: 35px;
-			  }
-			</style>
-		<title>knowledge is Power</title>
-		<meta charset="utf-8" />
-		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
-		<link rel="stylesheet" href="../css/main.css" />
-		<div><img src="../assets/nbf3.png" ; style="width: 1280px;" alt=""></div>
-		<style>
-			/* Grid container for arranging all containers in a grid layout */
-			.grid-container {
-			  display: inline-flex;
-			  grid-template-columns: repeat(2, 1fr); /* Two containers per row for larger screens */
-			  gap: 22px;
-			  padding-left: 5px;
-			}
-			/* Styling for each individual clickable container */
-			.image-container {
-			  display: flex;
-			  flex-direction: column;
-			  align-items: center;
-			  gap: 10px;
-			  width: 275px;
-			  padding: 5px;
-			  text-decoration: none;
-			  background-color: #f0f0f0;
-			  border-radius: 8px;
-			  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Soft initial shadow */
-			  transition: transform 0.2s, box-shadow 0.2s;
-			}
-			/* Hover effect for shadow and scale */
-			.image-container:hover {
-			  transform: scale(1.05); /* Slightly enlarge on hover */
-			  box-shadow: 0 8px 16px rgba(243, 3, 3, 0.998); /* Darker shadow on hover */
-			}
-			.image-container img {
-			  width: 150px;
-			  height: 150px;
-			  border-radius: 4px; /* Optional rounded corners for the image */
-			}
-			.image-container input[type="text"] {
-			  padding: 8px;
-			  width: 100%;
-			  box-sizing: border-box;
-			}
-			.read-more-button {
-              margin-top: 5px;
-              background: none;
-              border: none;
-              color: blue;
-              cursor: pointer;
-              text-decoration: underline;
-              font-size: 14px;
-            }
-		
-			/* Media query for mobile devices */
-			@media (max-width: 600px) {
-			  .grid-container {
-				grid-template-columns: 1fr; /* Single column layout for mobile screens */
-				padding: 10px;
-			  }
-			  .image-container {
-				width: 100%; /* Make container width flexible on mobile */
-			  }
-			  .image-container img {
-				width: 100%; /* Adjust image to be full width within container */
-				height: auto; /* Maintain aspect ratio */
-			  }
-			}
-		  </style>
+    <style>
+        /* Basic styling for the navbar */
+        body {
+          font-family: Arial, sans-serif;
+          margin: 0;
+        }
+        
+        .navbar {
+          display: flex;
+          justify-content:center
+          text-align; left: cover;
+          background-position: center;
+          
+        }
+        .navbar a {
+          color: rgb(16, 16, 16);
+          text-decoration-line: none;
+          padding: 4px 8px;
+          transition:all
+          transform; scale3d(8);
+        }
+        .navbar a:hover {
+         background-color: #555;
+         transform: translateY(-7px); /* Moves link slightly upward on hover */
+         box-shadow: 4px 4px 8px rgb(237, 4, 4); /* Enhances shadow on hover */
+        }
+        .nav-links {
+          display: flex;
+          gap: 35px;
+        }
+      </style>
+     <title>Nigerian Book Foundation</title>
+     <meta charset="utf-8" />
+     <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+     <link rel="stylesheet" href="css\main.css" />
+     <div><img src="../assets/nbf3.png" ; style="width:100%;" alt=""></div>
+     <style>
+      /* Grid container for arranging all containers in a grid layout */
+      .grid-container {
+        display: inline-flex;
+        grid-template-columns: repeat(2, 1fr); /* Two containers per row for larger screens */
+        gap: 22px;
+        padding-left: 5px;
+      }
+      /* Styling for each individual clickable container */
+      .image-container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 10px;
+        width: 275px;
+        padding: 5px;
+        text-decoration: none;
+        background-color: #f0f0f0;
+        border-radius: 8px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Soft initial shadow */
+        transition: transform 0.2s, box-shadow 0.2s;
+      }
+      /* Hover effect for shadow and scale */
+      .image-container:hover {
+        transform: scale(1.05); /* Slightly enlarge on hover */
+        box-shadow: 0 8px 16px rgba(243, 3, 3, 0.998); /* Darker shadow on hover */
+      }
+      .image-container img {
+        width: 150px;
+        height: 150px;
+        border-radius: 4px; /* Optional rounded corners for the image */
+      }
+      .image-container input[type="text"] {
+        padding: 8px;
+        width: 100%;
+        box-sizing: border-box;
+      }
+      .read-more-button {
+        margin-top: 5px;
+        background: none;
+        border: none;
+        color: blue;
+        cursor: pointer;
+        text-decoration: underline;
+        font-size: 14px;
+      }
+  
+      /* Media query for mobile devices */
+      @media (max-width: 600px) {
+        .grid-container {
+          grid-template-columns: 1fr; /* Single column layout for mobile screens */
+          padding: 10px;
+        }
+        .image-container {
+          width: 100%; /* Make container width flexible on mobile */
+        }
+        .image-container img {
+          width: 100%; /* Adjust image to be full width within container */
+          height: auto; /* Maintain aspect ratio */
+        }
+      }
+      /* Basic Styles */
+* {
+margin: 0;
+padding: 0;
+box-sizing: border-box;
+}
+
+body {
+font-family: Arial, sans-serif;
+}
+
+/* Basic Styles */
+* {
+margin: 0;
+padding: 0;
+box-sizing: border-box;
+}
+
+body {
+font-family: Arial, sans-serif;
+}
+
+/* Basic Styles */
+* {
+margin: 0;
+padding: 0;
+box-sizing: border-box;
+}
+
+body {
+font-family: Arial, sans-serif;
+}
+
+/* Basic Styles */
+* {
+margin: 0;
+padding: 0;
+box-sizing: border-box;
+}
+
+body {
+font-family: Arial, sans-serif;
+}
+
+.footer {
+background-color: #ae0046;
+color: #fff;
+padding: 15px 0; /* Further reduced padding */
+text-align: center;
+}
+
+.footer-container {
+display: flex;
+justify-content: space-around;
+max-width: 1200px;
+margin: 0 auto;
+padding: 5px; /* Further reduced padding */
+}
+
+.footer-column {
+flex: 1;
+margin: 0 5px; /* Reduced margin for a tighter layout */
+}
+
+.footer-column h3 {
+margin-bottom: 8px; /* Further reduced spacing */
+font-size: 14px;
+}
+
+.footer-column p, .footer-column ul, .footer-column li {
+font-size: 12px;
+margin-bottom: 5px; /* Further reduced bottom margin */
+}
+
+.footer-column ul {
+list-style-type: none;
+padding: 0;
+}
+
+.footer-column a {
+color: #fff;
+text-decoration: none;
+transition: color 0.3s;
+}
+
+.footer-column a:hover {
+color: #ffa500;
+}
+
+.footer-bottom {
+margin-top: 10px; /* Further reduced from 15px */
+font-size: 12px;
+}
+/* Basic styling for the header */
+#header {
+width: 100%;
+padding: 10px 20px;
+background-color: #fdfcfc;
+color: #7b5e5e;
+display: flex;
+align-items: center;
+justify-content: space-between;
+}
+
+#header .logo {
+font-size: 1.5rem;
+color: #a88585;
+text-decoration: none;
+}
+
+#header .logo strong {
+font-style: italic;
+}
+
+.navbar {
+display: flex;
+justify-content: space-between;
+width: 100%;
+}
+
+.nav-links {
+font-size: 1.25rem;
+display: flex;
+gap: 15px;
+}
+
+.nav-links a {
+color: #9f5252;
+text-decoration: none;
+transition: color 0.3s;
+}
+
+.nav-links a:hover {
+color: #ff8c00; /* Hover color */
+}
+
+/* Responsive styles for smaller screens */
+@media (max-width: 768px) {
+#header {
+flex-direction: column;
+align-items: flex-start;
+}
+
+.nav-links {
+font-size: 1rem;
+flex-direction: column;
+align-items: flex-start;
+gap: 10px;
+width: 100%;
+margin-top: 10px;
+}
+
+.nav-links a {
+padding: 5px 0;
+}
+}
+.image {
+display: block;
+width: 100%; /* Sets image to 100% of its container */
+max-width: 500px; /* Optional maximum width for the image */
+margin: 0 auto;
+}
+
+.image img {
+width: 100%;
+height: auto; /* Maintains the aspect ratio */
+}
+
+@media (max-width: 768px) {
+.image {
+  max-width: 300px; /* Adjusts max-width for smaller screens */
+}
+}
+
+@media (max-width: 480px) {
+.image {
+  max-width: 200px; /* Further reduces max-width on very small screens */
+}
+}
+/* Basic styling for header and nav */
+#header {
+background-color: #f8f8f8;
+padding: 10px;
+}
+
+.navbar {
+display: flex;
+justify-content: space-between;
+align-items: center;
+}
+
+.nav-links {
+display: flex;
+gap: 15px;
+}
+
+.nav-links a {
+text-decoration: none;
+color: #333;
+}
+
+/* Media query for small screens */
+@media (max-width: 768px) {
+.navbar {
+  display: grid;
+  grid-template-columns: 1fr; /* Makes it a single-column layout */
+  text-align: center;
+}
+
+.nav-links {
+  display: grid;
+  gap: 10px;
+  grid-template-columns: 1fr; /* Each link takes full width */
+}
+
+.nav-links a {
+  padding: 10px;
+  border-bottom: 1px solid #ccc;
+}
+}
+.grid-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px; /* Space between containers */
+  justify-content: center;
+}
+
+/* Default styling for .image-container */
+.image-container {
+  width: 300px; /* Set width for larger screens */
+  height: 100px; /* Fixed height to ensure equal container heights */
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between; /* Ensures contents are spaced evenly */
+  overflow: hidden;
+  transition: width 0.3s ease, height 0.3s ease; /* Smooth transition for resizing */
+}
+
+/* Media Query for Extra-Large Screens */
+@media (min-width: 1200px) {
+  .image-container {
+    width: 270px; /* Increase width for very large screens */
+    height: 300px; /* Increase height for balance */
+  }
+}
+
+/* Media Query for Smaller Screens */
+@media (max-width: 768px) {
+  .grid-container {
+    flex-direction: column; /* Stack containers vertically */
+    align-items: center; /* Center-align containers */
+  }
+
+  .image-container {
+    width: 100%; /* Full width on smaller screens */
+    max-width: 280px; /* Restrict max width */
+    height: 420px; /* Smaller height for compact display on smaller screens */
+  }
+}
+
+/* Main container setup */
+.container {
+  display: flex;
+  gap: 20px; /* Space between the text and book containers */
+  align-items: flex-start;
+  padding: 20px;
+}
+
+/* Text container */
+.text-container {
+  flex: 1; /* Allows text container to take up available space */
+  max-width: 600px;
+}
+
+/* Book container */
+.book-container {
+  width: 300px;
+  flex-shrink: 0; /* Prevents the book container from shrinking */
+}
+
+.book-container img {
+  width: 100%; /* Ensures image fits the book container */
+  height: auto;
+  border-radius: 10px; /* Optional rounded corners */
+}
+
+/* Hidden text for the "Read More" feature */
+.more-text {
+  display: none;
+}
+
+.read-more-btn {
+  margin-top: 10px;
+  background-color: #0a0909;
+  color: #fff;
+  border: none;
+  padding: 8px 16px;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+/* Media query for smaller screens */
+@media (max-width: 768px) {
+  .container {
+    flex-direction: column; /* Stack containers vertically */
+    text-align: center; /* Center-align text */
+  }
+
+  .text-container,
+  .book-container {
+    max-width: 100%; /* Full width on smaller screens */
+  }
+
+  .book-container {
+    width: 80%; /* Adjusted width for smaller screens */
+    margin-top: 20px;
+  }
+}
+/* Basic footer styling */
+.footer {
+  background-color: #333;
+  color: #fff;
+  padding: 20px;
+  text-align: center;
+}
+
+/* Social icons styling */
+.social-icons {
+  display: flex;
+  justify-content: center;
+  gap: 25px; /* Increased gap between icons */
+  margin-bottom: 10px;
+}
+
+.social-icons a {
+  display: inline-block;
+  width: 40px;
+  height: 40px;
+}
+
+.social-icons img {
+  width: 100%;
+  height: auto;
+  border-radius: 50%; /* Optional: make icons circular */
+  transition: transform 0.3s ease; /* Optional: adds a hover effect */
+}
+
+/* Hover effect for icons */
+.social-icons a:hover img {
+  transform: scale(1.1); /* Slightly enlarges icon on hover */
+}
+
+/* Footer text */
+.footer p {
+  font-size: 14px;
+  margin: 0;
+}
+
+/* Media query for smaller screens */
+@media (max-width: 600px) {
+  .social-icons {
+    flex-direction: column; /* Stack icons vertically on small screens */
+    gap: 15px; /* Reduced gap for smaller screens */
+  }
+}
+/* Base style for the social icon container */
+.social-icons {
+  display: flex;
+  gap: 10px; /* Adds spacing between icons */
+}
+
+/* Style icons */
+.social-icons img {
+  width: 24px; /* Base size for icons */
+  height: auto;
+  transition: transform 0.3s ease;
+}
+
+.social-icons img:hover {
+  transform: scale(1.8); /* Larger scale for pronounced hover effect */
+}
+
+/* Media query for smaller screens */
+@media (max-width: 600px) {
+  .social-icons {
+    flex-direction: column; /* Stacks icons vertically */
+    align-items: center; /* Center-aligns icons */
+  }
+}
+
+ </style>
 	</head>
 	<body class="is-preload">
 
@@ -120,17 +502,13 @@
 
 							<!-- Header -->
 								<header id="header">
-									<a href="index.html" class="logo"><strong style="font-style: italic;">knowledge</strong> is Power</a>
+									
 									<nav class="navbar">
-										<div class="logo">
-										  
-										</div>
-										<div class="nav-links" style="font-size: x-large;">
+										 <p>Knowledge is Power</p>
+										<div class="nav-links">
 										  <a href="#home">Home</a>
 										  <a href="#about">About</a>
 										  <a href="#services">Services</a>
-										  <a href="#contact">Contact</a>
-										  <a href="#contact">Contact</a>
 										  <a href="#contact">Contact</a>
 										</div>
 									  </nav>
@@ -153,6 +531,46 @@
 										<img src="../assets/Untitled design (3).gif" alt="" />
 									</span>
 								</section>
+                                <div class="container">
+                                    <div class="text-container">
+                                      <h2>About the Book</h2>
+                                      <p>
+                                        His Majesty Eze Professor Chukwuemeka Ike was born to Mazi Charles Chinwuba Ike and Mrs. Dinah Mgbeke Ike (nee Ezeani) of Ikelionwu Ruling House, Ndikelionwu, in present day Orumba North LGA, Anambra State, Nigeria on Tuesday 28 April 1931,nkwo market day. 
+He attended Government College, Umuahia 
+(1945-1950) and University College, Ibadan (1951-1955), from where he obtained the B.A. (London) degree in 1955. In January 1967, he obtained the M.A. from Stanford University (USA). 
+
+
+
+                                        <span class="more-text">
+                                            His Majesty had the privilege of teaching at primary, secondary, teacher-training, and university levels. From teaching in secondary school, he joined the senior administrative staff of University College Ibadan (1957-1960). In October 1960, he joined the pioneer staff of University of Nigeria,  Nsukka, as Deputy Registrar, becoming the first Nigerian Registrar of the University in March 1963. At the end of the Nigeria/Biafra war in January 1970, the Administrator of East Central State, His Excellency Ukpabi Asika, appointed him Chairman of the Planning and Management Committee of the University, responsible for reopening the war battered University and Managing its affairs. In that capacity, he functioned as interim Chief Executive of the University, combining the role of Vice-Chancellor and Chairman of the Governing Council of the University at a most trying period in the life of the University. 
+                                            With the appointment of a Vice Chancellor and the installation of a regular Governing Council of the University in late 1970, Ike retired from University service in 1971 and moved with his family to Ghana to assume the post of Registrar and Chief Executive of the West African Examinations Council (WAEC), the first Nigerian to hold the position. During his tenure, WAEC, cut its umbilical cord with the University of Cambridge, University of London, Royal Society Arts, and City and Guilds of London Institute, becoming an autonomous examinations council whose certificates received national and international recognition. Also during his tenure, the Republic of Liberia, with historical links with the USA rather than the UK, joined the Council, thereby increasing the number of Member Countries from 4 to 5. In appreciation of his service as Registrar, City and Guilds of London Institute conferred on him (in 1978) the Honorary Fellowship of the Institute ( which carries the status of an honorary doctorate of the  University of London). He retired voluntarily from WAEC and the Nigerian public service on 1st July, 1979,at the age 48. (For the records, he had the distinction of being the first W.A.E.C Registrar authorized to sign certificates of the Council along with the Chairman who had before then been the sole signatory).
+                                        </span>
+                                      </p>
+                                      <button class="read-more-btn" onclick="toggleReadMore()">Read More</button>
+                                    </div>
+                                    <div class="book-container">
+                                      <img src="assets\founfer1.jpg" alt="Book Cover">
+                                    </div>
+                                  </div>
+                                  
+                                  <script>
+                                    function toggleReadMore() {
+  const moreText = document.querySelector('.more-text');
+  const btn = document.querySelector('.read-more-btn');
+  
+  if (moreText.style.display === 'none' || moreText.style.display === '') {
+    moreText.style.display = 'inline';
+    btn.textContent = 'Read Less';
+  } else {
+    moreText.style.display = 'none';
+    btn.textContent = 'Read More';
+  }
+}
+
+                                  </script>
+
+                                  
+                                  
 
 							<!-- Section -->
 								<section>
@@ -210,28 +628,67 @@
 													 DIRECTORY OF NIGERIAN BOOK DEVELOPMENT (edited by Chukwuemeka Ike), 1998.<br>
 													 THE BOOK IN 21ST CENTURY NIGERIA, AND UNIVERSAL BASIC EDUCATION (edited by Chukwuemeka Ike), 2000 <br>
 													 CREATING AND SUSTAINING A READING CULTURE (edited by Chukwuemeka Ike) 2000 <br>
-													 Academy Press Plc, Lagos, subsidized the cost of printing the DIRECTORY. Funding is required to update the DIRECTORY and publish new books. </p>
+													 NKA NA AKAORU NDI IGBO (edited by Nigerian Book Foundation). 2024  Academy Press Plc, Lagos, subsidized the cost of printing the DIRECTORY. Funding is required to update the DIRECTORY and publish new books. </p>
 											</div>
 										</article>
 										<article>
 											<span class="icon solid fa-signal"></span>
 											<div class="content">
-												<h3><b> National Book Distribution Organization:</b></h3><br>
+												<h3><b>Projects and Sponsors:</b></h3><br>
 												
-												The NBF is playing a catalytic role in attempting to establish a National Book Distribution Organization to meet an established need of the Nigerian book sector. <br>
+												<b> 1: Heinrich-boll Foundation Sponsored Projects: 1998-2000</b> <br>
+                                              Structure of the Projects.<br>
+                                              a.	Annual National Book Week.<br>
+                                              b.	Promotion of Culture of reading books.<br>
+                                              c.	Project Management.<br>
+                                              d.	Reading Promotion Unit 1 (RPU1) Southeast in Ndikelionwu.<br>
+                                              e.	Reading Promotion Unit 2 (RPU2) Southwest in Ibadan.<br>
+                                              f.	Reading Promotion Unit 3 (RPU3) North in Jos.<br>
+                                              Aim for the reading units:<br>
+                                              a.	To inculcate reading habits among children in both primary and secondary schools.<br>
+                                              b.	For Book sensitization.<br>
+                                              Activities Under Reading promotions:<br>
+                                              a.	Quiz.<br>
+                                              b.	Reading From the child’s work.<br>
+                                              c.	Drama.<br>
+                                              d.	Mobile Library.<br>
+                                              Project Duration: 3 years.<br>
+
+
+
+                                              <b>2. International Book Bank (IBB) USA: 2002-2004</b> <br>
+											  Donation of books to universities and other Higher Institutions for free distribution.<br>
+                                              Project duration: 2 years.<br>
+
+
+                                              <b> 3. Sabre Foundation USA: 2008-2011</b><br>
+                                              Structure of the Project: Donation of brand-new books for equipping the libraries across colleges of Education and Universities.<br>
+                                              Project duration 2 years.<br>
+
+                                              <b>4. First Anambra State Nigerian Book foundation Literacy creativity festival: 2013</b><br>
+                                              Sponsor: Anambra State Government, Governor Mr. Peter Obi.<br>
+
+                                              <b>5. Nigerian Book Foundation Writing Clinic: 2019</b><br>
+                                              Sponsor: Nigerian Book Foundation.<br>
+
+											  <b>6. Nigerian Book Foundation Book Club: 2024-Present.</b><br>
+                                              Sponsor: Nigerian Book Foundation.<br>
+
+ 
+												
 											</div>
 										</article>
 									</div>
 								</section>
 								<h2 style="padding-left: 12px;">Nigerian Book Foudation board members. </h2>
-								<div class="grid-container">
+								<div class="grid-container" style="color: black;">
 									<!-- Container 1 with Read More -->
 									<a href="" target="_blank" style="text-decoration: none;">
 									  <div class="image-container">
 										<img src="../assets/prof4.png" alt="Sample Image 1">
 										<div class="read-more-container">
-										  <p id="paragraph1" style="text-align: left;">Prof Chinyere Stella Okunna (FNGE, FNIPR, FACCE, NUJ National Media Icon):
-											<br> BA, MA, PhD (Professor of Mass Communication).</p>
+										  <p id="paragraph1" style="text-align: left; color: rgb(5, 4, 4);">Prof Chinyere Stella Okunna (FNGE, FNIPR, FACCE, NUJ National Media Icon):
+											<br> BA, MA, PhD (Professor of Mass Communication) Co-President NBF.</p>
 										</div>
 									  </div>
 									</a>
@@ -241,9 +698,9 @@
 									  <div class="image-container">
 										<img src="../assets/igwe13.png" alt="Sample Image 2">
 										<div class="read-more-container">
-										  <p id="paragraph2" style="text-align: left;">HRH Igwe Chidubem Iweka:
-											Writer, Novelist, Critic, Cssayist, Journalist, and Administrator.
-											Bsc California State University, Hayward California in 1982.</p>
+										  <p id="paragraph2" style="text-align: left;color: rgb(5, 4, 4);">His Majesty Igwe Chidubem Iweka, Eze Iweka III of Obosi Kingdom:
+											Writer, Novelist, Critic, Essayist, Journalist, and Administrator.
+											Bsc California State University, Hayward California.</p>
 										  
 										</div>
 									  </div>
@@ -254,12 +711,12 @@
 									  <div class="image-container">
 										<img src="../assets/w12.png" alt="Sample Image 3">
 										<div class="read-more-container">
-										  <p id="paragraph3" style="text-align: left;">Mr:
+										  <p id="paragraph3" style="text-align: left;color: rgb(5, 4, 4);">Mr:
 											<br>
 											Wilson Moneme:
 											Bachelor's <br>
-											degree <br>
-											 in Philosophy.
+											Degree .<br>
+											in Philosophy.
 											
 											</p>
 										  
@@ -271,10 +728,10 @@
 									<a href="" target="_blank" style="text-decoration: none;">
 									  <div class="image-container">
 										<img src="../assets/Dr Nkem.png" alt="Sample Image 4">
-										<div class="read-more-container" style="text-align: left;">
+										<div class="read-more-container" style="text-align: left;color: rgb(5, 4, 4);">
 										  <p id="paragraph4">Nkem Osuigwe PhD FNLA CLN
 											Director, Human Capacity Development and Training
-											African Library and Information Associations and Institutions (AfLIA)</p>
+											African Library and Information Associations and Institutions (AfLIA).</p>
 										  
 										</div>
 									  </div>
@@ -344,14 +801,14 @@
 										<article>
 											<a href="#" class="image"><img src="images/pic06.jpg" alt="" /></a>
 											<h3>BOARD OF TRUSTEES</h3>
-											<p> 1. Professor Chukwuemeka Ike, OFR, FNIM (Chairman). <br>
-												2. Professor Emeritus Ayo Banjo, CON, FNAL. <br>
-											   3. H.R.H Chief Nuhu Bature, Agwan Bajju. <br>
-											   4. Chief Mrs. Oby Nwankwo. <br>
-											   5. Senator Onyeabo C. Obi, Os'oji Nnewi. <br>
-											   6. Mr. J.I. Omoniyi. <br>
-											   7. Mrs. Oluronke O. Orimalade. <br>
-											   8. Mr. E. Akin Thomas. </p>
+											<p> 1.	Prof. Chinese Stella Okunna (Co-president).<br>
+												2.	HM Igwe Chidubem Iweka, Eze Iweka III of Obosi.<br>
+												3.	Mr Sule Momodu.<br>
+												4.	Mr Wilson Moneme.<br>
+												5.	Dr Nkem Osuigwe.<br>
+												6.	Prof. Ngozi Chuma-Ude. <br>
+											</p>
+												
 											<ul class="actions">
 												<li><a href="#" class="button">More</a></li>
 											</ul>
@@ -385,96 +842,97 @@
 					</div>
 
 				<!-- Sidebar -->
-					<div id="sidebar">
-						<div class="inner">
+				<!-- Sidebar -->
+				<div id="sidebar">
+					<div class="inner">
 
-							<!-- Search -->
-								<section id="search" class="alt">
-									<form method="post" action="#">
-										<input type="text" name="query" id="query" placeholder="Search" />
-									</form>
-								</section>
+						<!-- Search -->
+							<section id="search" class="alt">
+								<form method="post" action="#">
+									<input type="text" name="query" id="query" placeholder="Search" />
+								</form>
+							</section>
 
-							<!-- Menu -->
-								<nav id="menu">
-									<header class="major">
-										<h2>Menu</h2>
-									</header>
-									<ul>
-										<li><a href="index.html">Homepage</a></li>
-										<li><a href="generic.html">Generic</a></li>
-										<li><a href="elements.html">Elements</a></li>
-										<li>
-											<span class="opener">Submenu</span>
-											<ul>
-												<li><a href="#">Lorem Dolor</a></li>
-												<li><a href="#">Ipsum Adipiscing</a></li>
-												<li><a href="#">Tempus Magna</a></li>
-												<li><a href="#">Feugiat Veroeros</a></li>
-											</ul>
-										</li>
-										<li><a href="#">Etiam Dolore</a></li>
-										<li><a href="#">Adipiscing</a></li>
-										<li>
-											<span class="opener">Another Submenu</span>
-											<ul>
-												<li><a href="#">Lorem Dolor</a></li>
-												<li><a href="#">Ipsum Adipiscing</a></li>
-												<li><a href="#">Tempus Magna</a></li>
-												<li><a href="#">Feugiat Veroeros</a></li>
-											</ul>
-										</li>
-										<li><a href="#">Maximus Erat</a></li>
-										<li><a href="#">Sapien Mauris</a></li>
-										<li><a href="#">Amet Lacinia</a></li>
-									</ul>
-								</nav>
+						<!-- Menu -->
+							<nav id="menu">
+								<header class="major">
+									<h2>Menu</h2>
+								</header>
+								<ul>
+									<li><a href="index.html">Homepage</a></li>
+									<li><a href="generic.html">Generic</a></li>
+									<li><a href="elements.html">Elements</a></li>
+									<li>
+										<span class="opener"></span>
+										<ul>
+											<li><a href="#"></a></li>
+											<li><a href="#"></a></li>
+											<li><a href="#"></a></li>
+											<li><a href="#"></a></li>
+										</ul>
+									</li>
+									<li><a href="#"></a></li>
+									<li><a href="#"></a></li>
+									<li>
+										<span class="opener"></span>
+										<ul>
+											<li><a href="#"></a></li>
+											<li><a href="#"></a></li>
+											<li><a href="#"></a></li>
+											<li><a href="#"></a></li>
+										</ul>
+									</li>
+									<li><a href="#"></a></li>
+									<li><a href="#"></a></li>
+									<li><a href="#"></a></li>
+								</ul>
+							</nav>
 
-							<!-- Section -->
-								<section>
-									<header class="major">
-										<h2>Ante interdum</h2>
-									</header>
-									<div class="mini-posts">
-										<article>
-											<a href="#" class="image"><img src="images/pic07.jpg" alt="" /></a>
-											<p>Aenean ornare velit lacus, ac varius enim lorem ullamcorper dolore aliquam.</p>
-										</article>
-										<article>
-											<a href="#" class="image"><img src="images/pic08.jpg" alt="" /></a>
-											<p>Aenean ornare velit lacus, ac varius enim lorem ullamcorper dolore aliquam.</p>
-										</article>
-										<article>
-											<a href="#" class="image"><img src="images/pic09.jpg" alt="" /></a>
-											<p>Aenean ornare velit lacus, ac varius enim lorem ullamcorper dolore aliquam.</p>
-										</article>
-									</div>
-									<ul class="actions">
-										<li><a href="#" class="button">More</a></li>
-									</ul>
-								</section>
+						<!-- Section -->
+							<section>
+								<header class="major">
+									<h2></h2>
+								</header>
+								<div class="mini-posts">
+									<article>
+										<a href="#" class="image"><img src="images/pic07.jpg" alt="" /></a>
+										<p></p>
+									</article>
+									<article>
+										<a href="#" class="image"><img src="images/pic08.jpg" alt="" /></a>
+										<p></p>
+									</article>
+									<article>
+										<a href="#" class="image"><img src="images/pic09.jpg" alt="" /></a>
+										<p></p>
+									</article>
+								</div>
+								<ul class="actions">
+									<li><a href="#" class="button">More</a></li>
+								</ul>
+							</section>
 
-							<!-- Section -->
-								<section>
-									<header class="major">
-										<h2>Get in touch</h2>
-									</header>
-									<p>Sed varius enim lorem ullamcorper dolore aliquam aenean ornare velit lacus, ac varius enim lorem ullamcorper dolore. Proin sed aliquam facilisis ante interdum. Sed nulla amet lorem feugiat tempus aliquam.</p>
-									<ul class="contact">
-										<li class="icon solid fa-envelope"><a href="#">information@untitled.tld</a></li>
-										<li class="icon solid fa-phone">(000) 000-0000</li>
-										<li class="icon solid fa-home">1234 Somewhere Road #8254<br />
-										Nashville, TN 00000-0000</li>
-									</ul>
-								</section>
+						<!-- Section -->
+							<section>
+								<header class="major">
+									<h2>Get in touch</h2>
+								</header>
+								<p></p>
+								<ul class="contact">
+									<li class="icon solid fa-envelope"><a href="#"></a></li>
+									<li class="icon solid fa-phone"></li>
+									<li class="icon solid fa-home"><br />
+									</li>
+								</ul>
+							</section>
 
-							<!-- Footer -->
-								<footer id="footer">
-									<p class="copyright">&copy; Untitled. All rights reserved. Demo Images: <a href="https://unsplash.com">Unsplash</a>. Design: <a href="https://html5up.net">HTML5 UP</a>.</p>
-								</footer>
+						<!-- Footer -->
+							<footer id="footer">
+								<p class="copyright">&copy;<a href="https://unsplash.com">Unsplash</a>. Design: <a href="https://html5up.net"></a>.</p>
+							</footer>
 
-						</div>
 					</div>
+				</div>
 
 			</div>
 
@@ -485,15 +943,14 @@
 			<script src="assets/js/util.js"></script>
 			<script src="assets/js/main.js"></script>
 
-			<h2 style="padding-left: 12px;">Nigerian Book Foudation board members. </h2>
+			<h2 style="padding-left: 71px;">Nigerian Book Foudation staff members.</h2>
 			<div class="grid-container" style="padding-left: 25px;">
 				<!-- Container 1 with Read More -->
 				<a href="" target="_blank" style="text-decoration: none;">
 				  <div class="image-container">
 					<img src="../assets/images/Nneka.png" alt="Sample Image 1">
 					<div class="read-more-container">
-					  <p id="paragraph1" style="text-align: left;">Prof Chinyere Stella Okunna (FNGE, FNIPR, FACCE, NUJ National Media Icon):
-						<br> BA, MA, PhD (Professor of Mass Communication).</p>
+					  <p id="paragraph1" style="text-align: left;color: rgb(5, 4, 4);">Nneka Ezeibeanu. <br>Position: General Manager. <br>Qualification: Msc Mass Communication. </p>
 					</div>
 				  </div>
 				</a>
@@ -501,11 +958,9 @@
 				<!-- Container 2 with Read More -->
 				<a href="" target="_blank" style="text-decoration: none;">
 				  <div class="image-container">
-					<img src="../assets/igwe13.png" alt="Sample Image 2">
+					<img src="assets\images\oge7.png" alt="Sample Image 2">
 					<div class="read-more-container">
-					  <p id="paragraph2" style="text-align: left;">HRH Igwe Chidubem Iweka:
-						Writer, Novelist, Critic, Cssayist, Journalist, and Administrator.
-						Bsc California State University, Hayward California in 1982.</p>
+					  <p id="paragraph2" style="text-align: left; color:rgb(5, 4, 4);">Ogechukwu Chukwurah Gloria. <br>Position: Admin Officer.  <br>Qualification: Bsc Mass Communication.</p>
 					  
 					</div>
 				  </div>
@@ -516,13 +971,8 @@
 				  <div class="image-container">
 					<img src="../assets/images/chizzy3.png" alt="Sample Image 3">
 					<div class="read-more-container">
-					  <p id="paragraph3" style="text-align: left;">Mr:
-						<br>
-						Wilson Moneme:
-						Bachelor's <br>
-						degree <br>
-						 in Philosophy.
-						
+					  <p id="paragraph3" style="text-align: left; color:rgb(5, 4, 4);">
+						Chiazo Chigbo.<br>Position: Accountant.<br>Qualification: Msc Economics.
 						</p>
 					  
 					</div>
@@ -533,47 +983,166 @@
 				<a href="" target="_blank" style="text-decoration: none;">
 				  <div class="image-container">
 					<img src="../assets/images/ken.png" alt="Sample Image 4">
-					<div class="read-more-container" style="text-align: left;">
-					  <p id="paragraph4">Nkem Osuigwe PhD FNLA CLN
-						Director, Human Capacity Development and Training
-						African Library and Information Associations and Institutions (AfLIA)</p>
+					<div class="read-more-container" style="text-align: left;color: rgb(5, 4, 4);">
+					  <p id="paragraph4">Kenneth Anene. <br>Position: IT Support. <br>Qualification: HND <br> Electrical Engineering.</p>
 					  
 					</div>
 				  </div>
 				</a>
-			  </div>	
-			  <footer class="footer">
-				<div class="footer-content">
-				  
-				  <!-- About Section -->
-				  <div class="footer-section">
-					<h3>About Us</h3>
-					<p>We are committed to providing the best service and helping our users with top-quality content and support.</p>
-				  </div>
-			
-				  <!-- Quick Links Section -->
-				  <h3>Quick Links</h3>
-				  <div class="footer-section" style="display: flex; gap: 25px;">
-					<p><a href="#">Home</a></p>
-					<p><a href="#">Services</a></p>
-					<p><a href="#">Contact Us</a></p>
-					<p><a href="#">FAQs</a></p>
-				  </div>
-			
-				  <!-- Contact Section --><div class="footer-section">
-					<h3>Contact Us</h3>
-					<p>Email: support@example.com</p>
-					<p>Phone: (123) 456-7890</p>
-					<div class="social-icons">
-					  <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
-					  <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
-					  <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
-					  <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
-					</div>
-				  </div>
-				</div>
-				<p>&copy; 2024 Your Company. All Rights Reserved.</p>
-			  </footer>
+		     </div>	
+			 <article>
+				<span class="icon solid fa-rocket"></span>
+				<div class="content">
+					<h3></h3>
+					
+					<article>
+						<div 
+  class="book-container" 
+  style="
+    border: 1px solid #ddd; 
+    padding: 15px; 
+    border-radius: 8px; 
+    background-color: #fff; 
+    width: 100%; 
+    box-sizing: border-box; 
+    margin: 0 auto; 
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); 
+    font-family: Arial, sans-serif; 
+    font-size: 1rem; 
+    line-height: 1.6; 
+    color: #555;"
+>
+  <h2 
+    class="book-title" 
+    style="margin: 0 0 10px; font-size: 1.5rem;"
+  >
+    Our History.
+  </h2>
+  <p 
+    class="book-description" 
+    style="font-size: 1rem; line-height: 1.6; color: #555;"
+  >
+    <span class="short-text">In an attempt to find a lasting solution to a national
 
+        book Crisis, a concerned writer,<br>
+        Prof. Chukwuemeka Ike convened a meeting of writers.<br>
+        publishers, and representatives of various
+        professional groups in the book industry at Ibadan on<br>
+        May 24, 1990. The meeting resolved to establish the
+        Nigerian Book Development Forum (NBDF).<br> The
+        forum elected Professor Ike as convener and
+        appointed a task force with the following<br>
+        membership to act on its behalf when necessary. </span>
+    <span 
+      class="full-text" 
+      style="display: none;"
+    >
+	*Professor Chukwuemeka Ike, <br>
+	*The Hon. Dr. T.Akinola Aguda, <br>
+	*Mr. B.O. Bolodeoku,<br> 
+	*Mr. E. AkinThomas, <br>
+	*Mrs. Mabel D. Segun,<br> 
+	*Chief Nuhu Bature,<br>
+	*Dr. Bode Sowande, <br>
+	*Engr. Victor U. Nwankwo,<br>
+	*Professor Theo Vincent, <br>
+	*Mr Tope Popoola.<br>
+	*University Press Plc Ibadan voluntarily served as<br>
+	the secretariat for the forum and made available the
+	part-time services of Mrs. L.L. Onifade as secretary.<br>
+	
+	The task force held nine meetings and was grante
+	four hearings by the Presidential Advisory<br>
+	Committee between June 1990 June 1991. After
+	weighing the pros and cons of establishing a central<br>
+	book development agency as a government
+	parastatal, the Task Force opted for a non-<br>
+	governmental, non-profit Foundation. On July 16,
+	1991, the Nigerian Book Development Forum met at<br>
+	Ibadan and endorsed the establishment of the
+	Nigerian Book Foundation (NBF), thereby<br>
+	dissolving itself. A Board of Directors established on
+	the same date ceased to exist in December 1992 on<br>
+	technical grounds. A Board of Trustees, which
+	replaced it held its first meeting in Lagos on April 15,<br>
+	1993.<br>
+	
+	The Foundation set up its Secretariat at Awka,
+	Anambra State, in October 1993, and in December <br>
+	14, 1994, the National Advisory Council of the
+	foundation held its first meeting in Lagos.
+    </span>
+  </p>
+  <button 
+    class="read-more-btn" 
+    style="
+      margin-top: 10px; 
+      padding: 8px 12px; 
+      background-color: #fdfdfd; 
+      color: #f90303; 
+      border: none; 
+      border-radius: 4px; 
+      cursor: pointer; 
+      font-size: 0.9rem;"
+    onclick="toggleText(this)"
+  >
+    Read More
+  </button>
+</div>
+
+<script>
+	function toggleText(button) {
+	  const container = button.parentElement;
+	  const fullText = container.querySelector('.full-text');
+	  if (fullText.style.display === 'none' || fullText.style.display === '') {
+		fullText.style.display = 'inline';
+		button.textContent = 'Read Less';
+	  } else {
+		fullText.style.display = 'none';
+		button.textContent = 'Read More';
+	  }
+	}
+  
+	function addHoverEffect(element) {
+	  element.style.backgroundColor = "#f0f8ff"; /* Light blue background on hover */
+	  element.style.boxShadow = "0 6px 10px rgba(0, 0, 0, 0.2)";
+	}
+  
+	function removeHoverEffect(element) {
+	  element.style.backgroundColor = "#fff"; /* Reset to white background */
+	  element.style.boxShadow = "0 4px 6px rgba(0, 0, 0, 0.1)";
+	}
+  </script>
+
+			</article>
+			  <br>
+			  <br>
+			  <footer class="footer">
+				<div class="social-icons">
+				  <a href="https://facebook.com" target="_blank" aria-label="Facebook">
+					<img src="assets\icons8-facebook-logo-16.png" alt="Facebook">
+				  </a>
+				  <a href="https://twitter.com" target="_blank" aria-label="Twitter">
+					<img src="assets\icons8-twitter-48.png" alt="Twitter">
+				  </a>
+				  <a href="https://youtube.com" target="_blank" aria-label="YouTube">
+					<img src="assets\images\icons8-youtube-35.png" alt="YouTube">
+				  </a>
+				  <a href="assets\icons8-email-37.png" aria-label="Email">
+					<img src="assets\icons8-email-37.png" alt="Email">
+				  </a>
+				</div>
+				<div>Secretariat / Address:
+					Nigerian Book foundation
+					Behind Prof. Kenneth Dike Central e-library,
+					Aroma Awka,
+					Anambra State. <br>
+					Phone: 07081177628, 08084526575
+					E-mail: nbffound@yahoo.com
+					</div>
+				<p>&copy; 2024 Nigerian Book Foundation. All rights reserved.</p>
+			  </footer>
+			
+			  
 	</body>
 </html>
